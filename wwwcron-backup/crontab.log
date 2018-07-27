@@ -1,0 +1,6 @@
+##设定计划任务定时进行备份--backup
+####################################################################
+0 7 * * * /bin/sh /home/wwwcron/backup_mysql.sh > /dev/null 2>&1 &
+0 8 * * * /bin/sh /home/wwwcron/backup_web.sh > /dev/null 2>&1 &
+0 9 * * * /bin/sh /home/wwwcron/cleanback.sh > /dev/null 2>&1 &
+####################################################################
